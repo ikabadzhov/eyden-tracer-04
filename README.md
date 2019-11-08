@@ -1,5 +1,31 @@
 # Practical Assignment 4
 **Name:** Dion Dermaku & Ivan Kabadzhov
+
+This is the most recent update for both of us.
+
+Short Explanation of initial fixes:
+   CMakeLists.txt >> line 25 >> OpenCV 3.4 (changed initially from OpenCV 4.0)
+
+   After than we run the commands:
+   $ cmake CMakeLists.txt
+   $ cmake CMakeCache.txt
+   $ make
+   $ bin/eyden-tracer
+
+   From here observe and change the name of the file sampleGenerator.h (from SampleGenerator.h).
+   From here observe the produced warnings of formating in timer.h and fix them.
+
+   Change the path of the image in the main >> scene.ParseOBJ("data/cone32.obj");
+   
+   
+   
+ Provided source code for finished tasks 4.1. and 4.2.
+
+
+
+
+
+
 ## Problem 4.1 
 ### Vertex Normals (Points 20)
 Rather then storing a single _geometry normal_ for a triangle, it is often useful to store at each ```vertex``` a corresponding _vertex normal_. The advantage is that if we have a hit point on a triangle, the shading normal can be smoothly interpolated between the vertex normals. If neighboring triangles share the same vertex normals, a smooth appearance can be generated over non-smooth tesselated geometry.  
